@@ -1,0 +1,261 @@
+body {
+    background-color: #FF7AA4;
+}
+
+#carouselContent {
+    background-color: #FF7AA4;
+    height: 70px;
+    color: #F2F2F2;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+    display:block;
+}
+
+.carousel-control-prev .sr-only,
+.carousel-control-next .sr-only {
+    display: none;
+}
+
+#logo {
+    background-color: #F2F2F2;
+}
+
+.logo {
+    width: 20%;
+    height: auto;
+    background-color: #F2F2F2;
+    margin: auto;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFFDF4;
+    display: flex;
+    justify-content: center;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #FF7AA4;
+    text-align: center;
+    padding: 14px 45px;
+    text-decoration: none;
+    font-weight:500;
+  }
+  
+  li a:hover {
+    background-color: #FDB9E2;
+    color: white;
+  }
+
+.content1 {
+    width: 100%;
+}
+
+#projects {
+    background-color: white;
+    padding: 10px;
+}
+
+#projects h1 {
+    color: #FF7AA4;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: #FDB9E2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FDB9E2;
+    padding: 10px;
+}
+
+#content3 {
+    background-image: url('./content\ 3.png');
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+#content3 h2{
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+}
+
+
+.card {
+    margin-bottom: 20px; 
+    height: 100%; 
+}
+
+.card-body {
+    padding: 1.25rem; 
+}
+
+.card-img-top {
+    height: 100%; 
+    object-fit: cover; 
+}
+
+#content3 .container {
+    padding-top: 50px;
+    padding-bottom: 125px;
+}
+
+#content4 {
+    padding-top: 20px;
+    max-width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    background-color: white;
+}
+
+.card-header {
+    background-color: #F7D5E6;
+    color:white;
+    font-weight: 700;
+}
+
+.card-body {
+    color:#FF7AA4;
+}
+
+#btn {
+    background-color: #FAE385;
+    border-color: #FAE385;
+    color: white;
+    font-weight: 500;
+}
+
+#btn:hover {
+    background-color: #FDB9E2;
+    border-color: #FDB9E2;
+}
+
+#email-sub {
+    background-image: url('./email\ sub.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center; 
+    margin-bottom: 20px; 
+    padding-top: 900px;
+    padding-bottom: 100px;
+}
+
+input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #FF7AA4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FDB9E2;
+}
+
+footer{
+    background-color: #D1FCFE;
+}
+.footerContainer{
+    width: 100%;
+    padding: 30px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: #D1FCFE;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #D1FCFE;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #D1FCFE;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}

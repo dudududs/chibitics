@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check it Out</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./[FINAL] Collection.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+     <!-- Announcement Carousel -->
+
+     <div class="container">
+        <div id="carouselContent" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active text-center p-4">
+                     <p><b>July Exclusive:</b> Sanrio Inspired Objects (Coming Soon!)</p>
+                </div>
+                <div class="carousel-item text-center p-4">
+                    <p>Use <b>MYCHIBITICS</b> for 10% Off </p>
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Logo -->
+
+    <div id = "logo">
+        <img src = "./chibitics-logo-01.png" class="logo" alt = "logo">
+    </div>
+
+    <!-- Navbar -->
+
+    <ul>
+        <li><a class="active" href="./[FINAL] Homepage.html">Home</a></li>
+        <li><a href="./[FINAL] About.html">About</a></li>
+        <li><a href="./[FINAL] Collection.html">Browse Collections</a></li>
+        <li><a href="./[FINAL] Order.html">Order Now</a></li>
+    </ul>
+
+    <!-- Carousel -->
+    <section id = "character-gallery">
+        <h1>Characters</h1>
+    <div class = "gallery-wrap">
+        <img src = "./back.png" id = "backBtn">
+        <div class = "gallery">
+            <div>
+                <span><img src = "./Human1.png"></span>
+                <span><img src = "./Human2.png"></span>
+                <span><img src = "./Human3.png"></span>
+            </div>
+            <div>
+                <span><img src = "./Human4.png"></span>
+                <span><img src = "./Human5.png"></span>
+                <span><img src = "./Human6.png"></span>
+            </div>
+            <div>
+                <span><img src = "./Human7.png"></span>
+                <span><img src = "./Human8.png"></span>
+                <span><img src = "./Human9.png"></span>
+            </div>
+        </div>
+        <img src = "./next.png" id = "nextBtn">
+    </div>
+
+    <h1>Pets</h1>
+    <div class = "gallery-wrap">
+        <img src = "./back.png" id = "backBtn">
+        <div class = "gallery">
+            <div>
+                <span><img src = "./Pet1.png"></span>
+                <span><img src = "./Pet2.png"></span>
+                <span><img src = "./Pet3.png"></span>
+            </div>
+            <div>
+                <span><img src = "./Pet4.png"></span>
+                <span><img src = "./Pet5.png"></span>
+                <span><img src = "./Pet6.png"></span>
+            </div>
+            <div>
+                <span><img src = "./Pet7.png"></span>
+                <span><img src = "./Pet8.png"></span>
+                <span><img src = "./Pet9.png"></span>
+            </div>
+        </div>
+        <img src = "./next.png" id = "nextBtn">
+    </div>
+    </section>
+    
+
+                  
+     <!-- Footer -->
+
+     <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/profile.php?id=61561903691373"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/chibitics/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            
+        </div>
+    </footer>
+
+    <!-- jQuery and Bootstrap JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script>
+         $(document).ready(function() {
+        $('#carouselContent').carousel();
+    });
+
+       let scrollContainer = document.querySelector(".gallery");
+       let backBtn = document.getElementById("backBtn");
+       let nextBtn = document.getElementById("nextBtn");
+
+       scrollContainer.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+        scrollContainer.style.scrollBehavior = "auto";
+       });
+
+       nextBtn.addEventListener("click", ()=>{
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft += 900;
+       });
+
+       backBtn.addEventListener("click", ()=>{
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft -= 900;
+       });
+
+       
+    </script>
+    
+</body>
+</html>
